@@ -168,10 +168,10 @@ public class Universe {
         if (one.equals (two)) {
             return 0;
         }
-        if (one.priority () < two.priority ()) {
+        if (one.priority () > two.priority ()) {
             return -1;
         }
-        if (one.priority () > two.priority ()) {
+        if (one.priority () < two.priority ()) {
             return 1;
         }
         if (one.hashCode () < two.hashCode ()) {
